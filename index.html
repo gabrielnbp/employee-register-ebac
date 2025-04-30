@@ -56,7 +56,7 @@
                         <div class="col-auto">
                             <label class="form-label" for="data-nascimento">Data de Nascimento:</label>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <input class="form-control" type="date" name="data-nascimento" id="data-nascimento">
                         </div>
                         <div class="col-auto">
@@ -64,31 +64,128 @@
                         </div>
                         <div class="col-auto align-items-center">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino">
+                                <input class="form-check-input" type="radio" name="genero" id="masculino"
+                                    value="masculino">
                                 <label class="form-check-label" for="masculino">Masculino</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="genero" id="feminino" value="feminino">
+                                <input class="form-check-input" type="radio" name="genero" id="feminino"
+                                    value="feminino">
                                 <label class="form-check-label" for="feminino">Feminino</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="row mb-3 align-items-center">
+                        <label class="form-label mt-4 mb-3" for="endereco">Endereço:</label>
                         <div class="col-auto">
-                            <label class="form-label" for="endereco">Endereço:</label>
+                            <label class="form-label" for="rua">Rua:</label>
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" name="endereco" id="endereco">
+                            <input class="form-control" type="text" name="rua" id="rua">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label class="form-label" for="cidade">Cidade:</label>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text" name="cidade" id="cidade">
+                        </div>
+                        <div class="col-auto">
+                            <label class="form-label" for="estado">Estado:</label>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text" name="estado" id="estado">
+                        </div>
+                        <div class="col-auto">
+                            <label class="form-label" for="lista-paises">País:</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="lista-paises" id="lista-paises">
+                                <option value="" selected hidden>Selecione um país</option>
+                                <option value="AF">Afeganistão</option>
+                                <option value="ZA">África do Sul</option>
+                                <option value="AL">Albânia</option>
+                                <option value="DE">Alemanha</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="SA">Arábia Saudita</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armênia</option>
+                                <option value="AU">Austrália</option>
+                                <option value="AT">Áustria</option>
+                                <option value="AZ">Azerbaijão</option>
+                                <option value="BE">Bélgica</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BO">Bolívia</option>
+                                <option value="BR">Brasil</option>
+                                <option value="BG">Bulgária</option>
+                                <option value="CA">Canadá</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="KR">Coreia do Sul</option>
+                                <option value="KP">Coreia do Norte</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="HR">Croácia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="DK">Dinamarca</option>
+                                <option value="EG">Egito</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="EC">Equador</option>
+                                <option value="ES">Espanha</option>
+                                <option value="US">Estados Unidos</option>
+                                <option value="PH">Filipinas</option>
+                                <option value="FI">Finlândia</option>
+                                <option value="FR">França</option>
+                                <option value="GR">Grécia</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="IN">Índia</option>
+                                <option value="ID">Indonésia</option>
+                                <option value="IR">Irã</option>
+                                <option value="IQ">Iraque</option>
+                                <option value="IE">Irlanda</option>
+                                <option value="IS">Islândia</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Itália</option>
+                                <option value="JP">Japão</option>
+                                <option value="LU">Luxemburgo</option>
+                                <option value="MX">México</option>
+                                <option value="MZ">Moçambique</option>
+                                <option value="NA">Namíbia</option>
+                                <option value="NG">Nigéria</option>
+                                <option value="NL">Países Baixos</option>
+                                <option value="PK">Paquistão</option>
+                                <option value="PA">Panamá</option>
+                                <option value="PY">Paraguai</option>
+                                <option value="PE">Peru</option>
+                                <option value="PL">Polônia</option>
+                                <option value="PT">Portugal</option>
+                                <option value="GB">Reino Unido</option>
+                                <option value="CZ">República Tcheca</option>
+                                <option value="RO">Romênia</option>
+                                <option value="RU">Rússia</option>
+                                <option value="SE">Suécia</option>
+                                <option value="CH">Suíça</option>
+                                <option value="TH">Tailândia</option>
+                                <option value="TR">Turquia</option>
+                                <option value="UA">Ucrânia</option>
+                                <option value="UY">Uruguai</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Vietnã</option>
+                                <option value="ZW">Zimbábue</option>
+                            </select>
                         </div>
                     </div>
 
                     <label for="observacao">Observações:</label>
                     <textarea class="form-control mb-3" name="observacao" id="observacao" rows="5"></textarea>
-                    
+
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="form-check">
-                            <label class="form-check-label" for="aceite-termos">Li e concordo com os <a href="#">termos de serviço</a>.</label>
+                            <label class="form-check-label" for="aceite-termos">Li e concordo com os <a href="#">termos
+                                    de serviço</a>.</label>
                             <input class="form-check-input" type="checkbox" name="aceite-termos" id="aceite-termos">
                         </div>
 
@@ -100,6 +197,9 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
